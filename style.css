@@ -157,39 +157,50 @@ nav ul li a:hover::after{
 #Projects{
     padding: 40px 0;
 }
-.Projects-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
-}
-.Projects-list div{
-    background: #262626;
-    padding: 40px;
-    font-size: 13px;
+.Projects-list div {
+    background: #333; /* Adjust background color for contrast */
+    padding: 20px;
+    font-size: 14px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    display: flex; /* Use flexbox for internal alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute space around items */
 }
-.Projects-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.Projects-list div h2{
-    font-size: 30px;
-    font-weight: 500;
+
+.Projects-list div i {
+    font-size: 30px; /* Adjust icon size */
     margin-bottom: 15px;
+    align-self: center; /* Center the icon */
 }
-.Projects-list div a{
+
+.Projects-list div h2 {
+    font-size: 20px; /* Adjust title size */
+    font-weight: 500;
+    margin-bottom: 10px; /* Reduce space below the title */
+    text-align: center; /* Center align the title */
+}
+
+.Projects-list div p {
+    font-size: 14px; /* Adjust paragraph font size */
+    text-align: justify; /* Justify the paragraph text */
+    margin-bottom: 15px; /* Add space below paragraph */
+}
+
+.Projects-list div a {
     text-decoration: none;
     color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
+    font-size: 14px; /* Adjust link font size */
+    margin-top: 10px; /* Add some space above the link */
+    display: block; /* Make the link take the full width */
+    text-align: center; /* Center align the link */
 }
-.Projects-list div:hover{
-    background: #ff004f;
-    transform: translateY(-10px);
+
+.Projects-list div:hover {
+    background: #ff004f; /* Lighter background color on hover */
+    transform: translateY(-5px); /* Slightly raise the card */
+    cursor: pointer; /* Smaller translateY effect */
 }
 
 /*----------------portfolio----------------*/
